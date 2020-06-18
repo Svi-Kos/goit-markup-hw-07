@@ -1,0 +1,24 @@
+.logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  color: $accent-color;
+
+  &-main {
+    .item {
+      color: $primary-text-color;
+    }
+  }
+
+  &-secondary {
+    display: block;
+    margin-bottom: 10px;
+
+    .item {
+      color: $white;
+    }
+  }
+}

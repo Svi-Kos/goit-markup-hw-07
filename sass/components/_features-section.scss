@@ -1,0 +1,49 @@
+.features {
+  @extend %list;
+  display: flex;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $primary-text-color;
+  }
+
+  .description {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: $text-color;
+  }
+
+  .features-image {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $button-bcg-color;
+  }
+
+  .features-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.title-hidden {
+  @extend %is-hidden;
+}

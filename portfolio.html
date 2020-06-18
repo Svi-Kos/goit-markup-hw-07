@@ -4,15 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
     <!-- header -->
@@ -23,7 +15,7 @@
             Web <span class="item">Studio</span>
           </a>
 
-          <ul class="list site-nav">
+          <ul class="site-nav">
             <li class="item"><a href="./index.html" class="link">Студия</a></li>
             <li class="item">
               <a href="" class="link current">
@@ -34,7 +26,7 @@
           </ul>
         </nav>
 
-        <ul class="list contacts-header">
+        <ul class="contacts-header">
           <li class="item">
             <a href="" class="link" aria-label="Написать">
               <svg class="mail-icon">
@@ -56,10 +48,10 @@
     </header>
 
     <main>
-      <h1 class="portfolio-header hidden">Портфолио</h1>
+      <h1 class="portfolio-header">Портфолио</h1>
       <section class="section portfolio-container">
         <div class="container">
-          <ul class="list portfolio-filter">
+          <ul class="portfolio-filter">
             <li class="item">
               <button type="button" class="filter-button">Все</button>
             </li>
@@ -77,8 +69,8 @@
             </li>
           </ul>
 
-          <h2 class="section-title hidden">Примеры работ</h2>
-          <ul class="list examples">
+          <h2 class="title-hidden">Примеры работ</h2>
+          <ul class="examples">
             <li class="item">
               <a href="">
                 <div class="thumb">
@@ -275,73 +267,69 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="main-footer">
-          <div class="footer-contacts">
-            <a href="" class="logo logo-secondary">
-              Web <span class="item">Studio</span>
-            </a>
-            <address class="contacts">
-              <div class="map-address">г. Киев, пр-т Леси Украинки, 26</div>
-              <div class="footer-mail">
-                <a href="mailto:info@example.com" class="link"
-                  >info@example.com</a
-                >
-              </div>
-              <div class="footer-tel">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-              </div>
-            </address>
-          </div>
-
-          <div class="social-media-footer">
-            <b>присоединяйтесь</b>
-            <ul class="list">
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-submit">
-            <b>подписаться на рассылку</b>
-            <form class="js-speaker-form">
-              <input type="email" name="mail" placeholder="E-mail" />
-              <button type="submit" class="button">
-                Подписаться<svg class="send">
-                  <use href="./images/symbol-defs.svg#send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+      <div class="container footer-content">
+        <div class="footer-contacts">
+          <a href="" class="logo logo-secondary">
+            Web <span class="item">Studio</span>
+          </a>
+          <address class="contacts">
+            <div class="map-address">г. Киев, пр-т Леси Украинки, 26</div>
+            <div class="footer-mail">
+              <a href="mailto:info@example.com" class="link"
+                >info@example.com</a
+              >
+            </div>
+            <div class="footer-tel">
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            </div>
+          </address>
         </div>
 
-        <p class="copyright">2020 | Developed by GoIT Students</p>
+        <div class="social-media-footer">
+          <b>присоединяйтесь</b>
+          <ul class="list">
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-submit">
+          <b>подписаться на рассылку</b>
+          <form class="js-speaker-form">
+            <input type="email" name="mail" placeholder="E-mail" />
+            <button type="submit" class="button">
+              Подписаться<svg class="send">
+                <use href="./images/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

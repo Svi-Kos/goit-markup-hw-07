@@ -4,15 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=hea, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
     <!-- header -->
@@ -23,7 +15,7 @@
             Web <span class="item">Studio</span>
           </a>
 
-          <ul class="list site-nav">
+          <ul class="site-nav">
             <li class="item">
               <a href="" class="link current">
                 Студия
@@ -38,7 +30,7 @@
           </ul>
         </nav>
 
-        <ul class="list contacts-header">
+        <ul class="contacts-header">
           <li class="item">
             <a
               href="mailto:info@devstudio.com"
@@ -75,9 +67,9 @@
       <!-- features -->
       <section class="section border">
         <div class="container">
-          <h2 class="section-title hidden">Преимущества</h2>
+          <h2 class="title-hidden">Преимущества</h2>
 
-          <ul class="list features">
+          <ul class="features">
             <li class="item">
               <div class="features-image">
                 <svg class="features-icon">
@@ -85,7 +77,7 @@
                 </svg>
               </div>
               <h3 class="title">Внимание к деталям</h3>
-              <p class="features-description">
+              <p class="description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
@@ -97,7 +89,7 @@
                 </svg>
               </div>
               <h3 class="title">Пунктуальность</h3>
-              <p class="features-description">
+              <p class="description">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
@@ -109,7 +101,7 @@
                 </svg>
               </div>
               <h3 class="title">Планирование</h3>
-              <p class="features-description">
+              <p class="description">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
@@ -121,7 +113,7 @@
                 </svg>
               </div>
               <h3 class="title">Современные технологии</h3>
-              <p class="features-description">
+              <p class="description">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -135,7 +127,7 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
-          <ul class="list our-work">
+          <ul class="our-work">
             <li class="item">
               <img
                 src="./images/desctop-apps.jpg"
@@ -170,7 +162,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
-          <ul class="list our-team">
+          <ul class="our-team">
             <li class="item">
               <img
                 src="./images/JohnSmith.jpg"
@@ -178,7 +170,7 @@
                 width="270"
               />
               <h3 class="title">Николай Кучеренко</h3>
-              <p class="our-team-description">Product Designer</p>
+              <p class="description">Product Designer</p>
               <ul class="list">
                 <li class="item-social">
                   <a href="" class="link">
@@ -217,7 +209,7 @@
                 width="270"
               />
               <h3 class="title">Ольга Иванова</h3>
-              <p class="our-team-description">Frontend Developer</p>
+              <p class="description">Frontend Developer</p>
               <ul class="list">
                 <li class="item-social">
                   <a href="" class="link">
@@ -256,7 +248,7 @@
                 width="270"
               />
               <h3 class="title">Андрей Шевченко</h3>
-              <p class="our-team-description">Marketing</p>
+              <p class="description">Marketing</p>
               <ul class="list">
                 <li class="item-social">
                   <a href="" class="link">
@@ -295,7 +287,7 @@
                 width="270"
               />
               <h3 class="title">Иван Николаев</h3>
-              <p class="our-team-description">UI Designer</p>
+              <p class="description">UI Designer</p>
               <ul class="list">
                 <li class="item-social">
                   <a href="" class="link">
@@ -336,7 +328,7 @@
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
 
-          <ul class="list our-clients">
+          <ul class="our-clients">
             <li class="item">
               <a href="" class="link">
                 <svg class="client-icon" width="44" height="90">
@@ -450,7 +442,11 @@
             </label>
           </div>
 
-          <button class="close-form" data-modal-close></button>
+          <button class="close-form" data-modal-close>
+            <svg class="close-icon">
+              <use href="./images/symbol-defs.svg#close-icon"></use>
+            </svg>
+          </button>
           <button type="submit" class="button" data-modal-close>
             Отправить
           </button>
@@ -460,73 +456,69 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="main-footer">
-          <div class="footer-contacts">
-            <a href="" class="logo logo-secondary">
-              Web <span class="item">Studio</span>
-            </a>
-            <address class="contacts">
-              <div class="map-address">г. Киев, пр-т Леси Украинки, 26</div>
-              <div class="footer-mail">
-                <a href="mailto:info@example.com" class="link"
-                  >info@example.com</a
-                >
-              </div>
-              <div class="footer-tel">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-              </div>
-            </address>
-          </div>
-
-          <div class="social-media-footer">
-            <b>присоединяйтесь</b>
-            <ul class="list">
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="icon-social">
-                  <svg class="social-media">
-                    <use href="./images/symbol-defs.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-submit">
-            <b>подписаться на рассылку</b>
-            <form class="js-speaker-form">
-              <input type="email" name="mail" placeholder="E-mail" />
-              <button type="submit" class="button">
-                Подписаться<svg class="send">
-                  <use href="./images/symbol-defs.svg#send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+      <div class="container footer-content">
+        <div class="footer-contacts">
+          <a href="" class="logo logo-secondary">
+            Web <span class="item">Studio</span>
+          </a>
+          <address class="contacts">
+            <div class="map-address">г. Киев, пр-т Леси Украинки, 26</div>
+            <div class="footer-mail">
+              <a href="mailto:info@example.com" class="link"
+                >info@example.com</a
+              >
+            </div>
+            <div class="footer-tel">
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            </div>
+          </address>
         </div>
 
-        <p class="copyright">2020 | Developed by GoIT Students</p>
+        <div class="social-media-footer">
+          <b>присоединяйтесь</b>
+          <ul class="list">
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="icon-social">
+                <svg class="social-media">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-submit">
+          <b>подписаться на рассылку</b>
+          <form class="js-speaker-form">
+            <input type="email" name="mail" placeholder="E-mail" />
+            <button type="submit" class="button">
+              Подписаться<svg class="send">
+                <use href="./images/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
